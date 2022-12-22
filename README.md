@@ -29,6 +29,14 @@ python3 main.py
 This project reads a .csv file with dataset of the world population.
 [original sourse in kaggle](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
 
+Before run this poject, you have to create a virtual env.
+```sh
+cd app
+python3 -m venv chart-app-env
+source chart-app-env/bin/activate
+pip3 install -r requirements.txt
+```
+
 **Run this project**
 ```sh
 python3 app/main.py
