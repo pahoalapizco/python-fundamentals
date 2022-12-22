@@ -1,1 +1,1 @@
-print("Hello from my computer")
+print("Hello Python from my computer")
