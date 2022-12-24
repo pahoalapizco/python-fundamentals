@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def generate_bar_chart(labels, values, name = ""):
-  chart_name = f"./app/imgs/{name.capitalize()}_bar_chart.png"
+  chart_name = f"imgs/{name.capitalize()}_bar_chart.png"
   fig, ax = plt.subplots()
   ax.bar(labels, values)
   plt.savefig(chart_name)
@@ -10,7 +10,7 @@ def generate_bar_chart(labels, values, name = ""):
 
 
 def generate_pie_chart(labels, values, name = ""):
-  chart_name = f"./app/imgs/{name.capitalize()}_pie_chart.png"
+  chart_name = f"imgs/{name.capitalize()}_pie_chart.png"
   fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')

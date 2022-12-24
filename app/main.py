@@ -38,7 +38,7 @@ def chart_country_population(data):
 
 
 def run():
-  data = rcsv.read_csv("./app/data.csv")
+  data = rcsv.read_csv("data.csv")
   chart_country_population(data)
 
 

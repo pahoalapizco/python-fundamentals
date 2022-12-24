@@ -32,8 +32,8 @@ This project reads a .csv file with dataset of the world population.
 Before run this poject, you have to create a virtual env.
 ```sh
 cd app
-python3 -m venv chart-app-env
-source chart-app-env/bin/activate
+python3 -m venv env
+source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
