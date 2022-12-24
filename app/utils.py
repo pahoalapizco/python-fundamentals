@@ -19,7 +19,7 @@ def population_by_country(data, country, key_name):
   return list(population)
 
 
-def get_singular_column(data, coumn_key, column_value):
+def get_single_column(data, coumn_key, column_value):
   column_data = [{item[coumn_key]: item[column_value]} for item in data]
   return column_data
 
@@ -98,6 +98,6 @@ if __name__ == "__main__":
     'Growth Rate': '1.0204',
     'World Population Percentage': '0.2'
   }]
-  result = get_singular_column(data, "Country/Territory",
+  result = get_single_column(data, "Country/Territory",
                                "World Population Percentage")
   print(result)
