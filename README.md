@@ -7,12 +7,12 @@ This is a repository that contains all exercises from Platzi's course
 ## Game Project
 **Game rules**
 > Piedra gana a Tijeras <br>
-> Papel gana a Pedra <br>
+> Papel gana a Piedra <br>
 > Tijeras gana a Papel 
 
-You must to win two rouns.
+You must to win two rounds.
 <br>
-**How start the game:**
+**How to start the game:**
 
 ```sh
 python3 game/main.py
@@ -56,3 +56,31 @@ Which chart do you prefer?
   [1] Bar Chart
 ```
 
+<br>
+
+## Web Server
+Sample of calling an API with library `requests`.
+This short example call three endpoints
+1. Get all categories
+2. Get a single category by its id
+3. Get all gategory's productos by category id
+
+First of all, you need to create a virtual env and install dependencies. 
+
+```sh
+cd web-server
+python3 -m venv env
+source env/bin/activate
+pip3 install -r requirements.txt
+```
+
+To run the example (on virtual env) follow these commands:
+```sh
+python3 web-server/main.py
+```
+or
+```sh
+cd web-server
+python3 main.py
+```
+> This is te API I used for this example: https://fakeapi.platzi.com/doc
