@@ -59,12 +59,7 @@ Which chart do you prefer?
 <br>
 
 ## Web Server
-Sample of calling an API with library `requests`.
-This short example call three endpoints
-1. Get all categories
-2. Get a single category by its id
-3. Get all gategory's productos by category id
-
+This project has two examples 
 First of all, you need to create a virtual env and install dependencies. 
 
 ```sh
@@ -74,7 +69,17 @@ source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-To run the example (on virtual env) follow these commands:
+
+### **No.1:**
+
+Sample of calling an API with library `requests`.
+This short example call three endpoints
+1. Get all categories
+2. Get a single category by its id
+3. Get all gategory's productos by category id
+
+
+To run 1st example (on virtual env) follow these commands:
 ```sh
 python3 web-server/main.py
 ```
@@ -84,3 +89,27 @@ cd web-server
 python3 main.py
 ```
 > This is te API I used for this example: https://fakeapi.platzi.com/doc
+
+
+### **No.2:**
+Little sample of an API created with libraries FastAPI and uvicorn
+This example has three endpoints <br>
+root endpint: `/`  returns an HTML template <br>
+
+get a list of numbers: `/list` <br>
+```json
+[1, 2, 3, 4]
+```
+
+get a dictionary: `/dict` <br>
+```json
+{
+  key 1: "Value 1",
+  key 2: "Value 2",
+  key 3: "Value 3"
+}
+```
+To start this example run the following command
+```sh
+uvicorn web:app --reload
+```
