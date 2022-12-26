@@ -120,3 +120,12 @@ To start this example run the following command
 ```sh
 uvicorn web:app --reload
 ```
+
+<br>
+
+**This project also use docker, to run with docker follow these steps:**
+<br>
+1. Build the container `docker-compose build`
+2. Turn on the container `docker-compose up -d`
+3. Go check your web browser on `http://localhost:80`
+<br>
