@@ -55,7 +55,14 @@ Which chart do you prefer?
   [0] Pie Chart
   [1] Bar Chart
 ```
+<br>
 
+**This project also use docker, to run with docker follow these steps:**
+<br>
+1. Build the container `docker-compose build`
+2. Turn on the container `docker-compose up -d`
+3. Go inside the container `docker-compose exec app-csv bash`
+4. Follow the steps above
 <br>
 
 ## Web Server
